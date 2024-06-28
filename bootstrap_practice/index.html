@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader-letter">n</div>
+        <div class="loader-letter">p</div>
+        <div class="loader-letter">m</div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top navi">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1 fw-bolder" id="brand">&lt;npm&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav fw-bold text-info">
+                    <li class="nav-item"><a href="#about" class="nav-link ">About</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="form-check form-switch justify-content-end">
+                <input type="checkbox" role="switch" id="flexSwitchCheckDefault" class="form-check-input" onclick="changeMode()">
+                <label for="flexSwitchCheckDefault" class="form-check-label"></label>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main">
+        <section class="sec" id="home">
+            <div class="row card-body home align-items-center">
+                <div class="col-lg-5 col-md-6 col-sm-12 text-center">
+                    <img src="assets/Mustapha, Nur-Hamin P.  2x2 No-Tag.jpg"
+                     class="img-fluid circular" alt="image">
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 text-center text-md-start">
+                    <p class="fw-semibold">Hello, world! I'm</p>
+                    <h3 class="fw-bold">Nur-hamin Pendatun Mustapha</h3>
+                    <h4>Frontend Developer</h4>
+                    <button class="btn btn-outline-primary" type="button">CV</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec" id="about">
+            <h2>About Me</h2>
+        </section>
+
+        <section class="sec" id="projects">
+            <h2>Projects</h2>
+        </section>
+
+        <section class="sec" id="contact">
+            <h2>Contact</h2>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
